@@ -1,0 +1,202 @@
+
+div {
+   border: 1px solid black;
+}
+a {
+    text-decoration: none;
+}
+
+#main {
+    margin: 0 auto;
+    width: 600px;
+}
+#sign_in_on_ver_menu {
+    height: 20px;
+}
+/* 1st div*/
+#to_main_page {
+    width: 40%;
+    float: left;
+    height: 100%;
+}
+#user_greeting {
+    text-align: right;
+    overflow: hidden;
+    height: 100%;
+}
+/* 2nd div*/
+#menu {
+    padding-top: 40px; 
+    height: 150px;
+}
+#menu_left {
+    width: 50%;
+    float: left;
+    height: 100%
+}
+#blog {
+    height: 50%;
+}
+#buttons {
+    height: 50%;
+}
+#menu_right {
+    height: 100%;
+    overflow: hidden;
+}
+    /* menu_left ПОДГОНКА*/
+    #blog {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        height: 75px;
+        width: 300px;   
+    }
+    #button1 {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        height: 37px;
+        width: 300px;
+    }
+    #button2 {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        height: 37px;
+        width: 300px;
+    }
+    #button1 {
+        //padding-top: 10px;
+    }
+    /* menu_right  ПОДГОНКА но позиционированием*/
+    #mright1 {
+        position: relative;
+        height: 17px;
+    }
+    #mright1 div {
+        position: absolute;
+        left: 33%;
+    }
+    /* menu_right (форма авторизации)ПОДГОНКА но позиционированием*/
+    .mright2 {
+        position: relative;
+        height: 25px;
+    }
+    .mright3 {
+        position: absolute;
+        left: 8%;
+        top: 12%
+    }
+    .mright4 {
+        position: absolute;
+        right: 7%;
+        top: 11%
+    }
+    #mright5 {
+        position: absolute;
+        left: 8%;
+        top: 11%
+    }
+    #mright6 {
+        position: absolute;
+        left: 18%;
+        top: 8%
+    }
+    #mright7 {
+        position: absolute;
+        right: 18%;
+        top: 8%
+    }
+    /* menu_right (форма регистрации) ПОДГОНКА но позиционированием*/
+    #mright8 {
+        position: relative;
+        height: 17px;
+    }
+    #mright8 div {
+        position: absolute;
+        left: 24%;
+    }
+    .mright10 {
+        position: absolute;
+        left: 3%;
+        top: 12%
+    }
+    .mright11 {
+        position: absolute;
+        right: 3%;
+        top: 11%
+    }
+    #mright12 {
+        position: absolute;
+        left: 14%;
+        top: 8%
+    }
+        
+        
+        
+        
+        
+        
+/* 3rd div*/
+#content {
+    min-height: 500px;
+}
+/* 4th div*/
+#footer {
+    min-height: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 1st div*//*
+#sign_in_on_ver_menu {
+    background: #3A6EA5;
+    position: relative;
+    height: 20px;
+}*/
+/* Sign in div horizont block plus pictures*//*
+#sign_in {
+    height: 18px;
+    width: 250px;
+    position: absolute;
+    right: 0px;
+}
+#sign_in div div {
+    float: left;
+    border: none;
+}
+#sign_in1 {
+    background: url(img/sign_in.png) no-repeat;
+    height: 16px;
+    width: 75px;
+    border: none;
+}
+#sign_in2 {
+    background: url(img/sign_in.png) no-repeat;
+    height: 16px;
+    width: 80px;
+    border: none;
+}
+#sign_in1 a {
+    padding: 0px 0px 0px 20px;
+}
+#sign_in2 a {
+    padding: 0px 0px 0px 20px;
+}
+*/

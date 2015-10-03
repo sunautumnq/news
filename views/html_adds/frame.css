@@ -1,0 +1,66 @@
+/*Каркас сайта плюс общие стили для эллементов на всем сайте*/
+div {
+   border: 1px solid black;
+}
+a {
+    text-decoration: none;
+}
+
+#main {
+    margin: 0 auto;
+    width: 600px;
+}
+#sign_in_on_ver_menu {
+    height: 20px;
+}
+/* 1st div*/
+#to_main_page {
+    width: 40%;
+    float: left;
+    height: 100%;
+}
+#user_greeting {
+    text-align: right;
+    overflow: hidden;
+    height: 100%;
+}
+/* 2nd div*/
+#menu {
+    padding-top: 40px; 
+    height: 150px;
+}
+#menu_left {
+    width: 50%;
+    float: left;
+    height: 100%
+}
+#blog {
+    height: 50%;
+}
+#buttons {
+    height: 50%;
+}
+#menu_right {
+    height: 100%;
+    overflow: hidden;
+}
+    /* menu_left ПОДГОНКА*/
+    #blog {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        height: 75px;
+        width: 300px;   
+    }
+    /* menu_right (форма регистрации) ПОДГОНКА но позиционированием*/
+
+    
+    
+/* 3rd div*/
+#content {
+    min-height: 500px;
+}
+/* 4th div*/
+#footer {
+    min-height: 60px;
+}
