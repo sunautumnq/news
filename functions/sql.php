@@ -5,7 +5,7 @@
 
     function sql_connect() {
         mysql_connect('localhost', 'root', 'root');
-        mysql_select_db('l8blog');
+        mysql_select_db('ml1_news');
     }
 // Query to db
 

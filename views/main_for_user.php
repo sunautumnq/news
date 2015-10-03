@@ -34,7 +34,7 @@
                 </div>
         <!-- log in or registr form -->
                 <div id="menu_right">
-                <?php include 'views/form_post.php';?>
+                <?php include 'views/form_post_comment.php';?>
                 
                 </div>
                 
@@ -44,22 +44,24 @@
             <div id="content">
                 <div id="content_main" style="min-height: 500px;">
                 <!-- Check if registered or just user have no post in db -->   
-                <?php if(empty($data['0'])):?>
+                <?php if(empty($articles_array['0'])):?>
                 <!-- appearing each post in users db --> 
-                <?php foreach($data as $string): $note = $string['0']; $note_title = $string['1']; $note_time = $string['2']; ?>
+                <?php foreach($articles_array as $title => $content): ?>
                     <div id="content_one_note">
                         <div id="main_title" style="min-height: 25px; background-color: graytext;">
-                            <div style="float: left;"><?=$note_title ?></div>
-                            <div style="float: right;"><?=$note_time ?></div>
+                            <div style="float: left;"><a href="#"><?=$title ?></a></div>
+                            <div style="float: right;"><?=$content['article_post_time'] ?></div>
                         </div>
-                        <div id="note_content" style="background-color: cadetblue;"><?=$note ?></div>
+                        <!-- <div id="note_content" style="background-color: cadetblue;"> <php =$content['article_content'] > </div> -->
                     </div>
                 <?php endforeach;?>
                 <?php endif;?>
                 </div>
                 
             </div>
-<!-- 4th div -->
+<!-- 4rd div -->
+
+<!-- 5th div -->
             <div id="footer">
                 
                 
