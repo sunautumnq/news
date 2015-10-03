@@ -50,7 +50,7 @@
                 <?php foreach($articles_array as $title => $content): ?>
                     <div id="content_one_note">
                         <div id="main_title" style="min-height: 25px; background-color: graytext;">
-                            <div style="float: left;"><a href="#"><?=$title ?></a></div>
+                            <div style="float: left;"><a href="specific_article.php?article=<?=$title ?>"><?=$title ?></a></div>
                             <div style="float: right;"><?=$content['article_post_time'] ?></div>
                         </div>
                         <!-- <div id="note_content" style="background-color: cadetblue;"> <php =$content['article_content'] > </div> -->
@@ -60,7 +60,7 @@
                 </div>
                 
             </div>
-<!-- 5rd div -->
+<!-- 4rd div -->
             <div id="comments">
                 
                 

@@ -35,6 +35,25 @@ function article_content_and_time ($a){
     }
     return $temp_array; 
 }
+// Specific article searh indb by article title
+
+function article_check_in_database ($a){
+    sql_connect();
+    $query = "SELECT * FROM articles WHERE article_title='" . $a . "'";
+    $temp = sql_query($query);
+    $temp2 = mysql_fetch_assoc($temp);
+    return $temp2;// returns array with article and information about it
+    //or bool(false) if article is not found
+}
+// NEW ARTICLE data add to database
+
+function article_add_to_db ($title, $content){
+    sql_connect();
+    $query = "INSERT INTO articles (article_title, article_content) VALUES ('" . $title . "', '" . $content . "')";
+    $temp = sql_query($query);
+    return $temp;// return true if article succesfuly added to db, or false if not
+}
+
 
 
 ?>

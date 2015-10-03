@@ -34,7 +34,7 @@
                 </div>
         <!-- log in or registr form -->
                 <div id="menu_right">
-                <?php include 'views/form_post_comment.php';?>
+                <?php include 'views/form_post_article.php';?>
                 
                 </div>
                 
