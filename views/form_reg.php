@@ -1,5 +1,6 @@
-<!-- Registration form -->       
-<form action="reg.php" method="post">
+<!-- Registration form -->
+    <!-- php передаст get параметр если пользователь зашел со страници конкретной статьи -->
+<form action="reg.php<?php if($user_name == '0') echo '?article=' . $title; ?>" method="post">
     <fieldset>
         <div id="mright8"><div><legend> Please input your data </legend></div></div>
         <br/>

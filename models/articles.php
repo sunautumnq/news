@@ -35,7 +35,7 @@ function article_content_and_time ($a){
     }
     return $temp_array; 
 }
-// Specific article searh indb by article title
+// Specific article searh in db by article title
 
 function article_check_in_database ($a){
     sql_connect();

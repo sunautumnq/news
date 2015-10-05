@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title> BLOG SYSTEM </title>
+        <title> NEWS SYSTEM </title>
         <meta charset="UTF-8" content="text/html"/>
         <link href="views/html_adds/css_reset.css" rel="stylesheet" type="text/css" media="screen"/>
         <link href="views/html_adds/frame.css" rel="stylesheet" type="text/css" media="screen"/>
@@ -15,15 +15,15 @@
             <div id="sign_in_on_ver_menu">
                 <div id="to_main_page">
                     <?php if($form_type !== '0'):?>
-                    <a href="index.php">На главную</a>
+                    <a href="index.php">Главная</a>
                     <?php endif;?>
                 </div> 
-                <div id="user_greeting">asdasd</div>
+                <div id="user_greeting"></div>
             </div>
 <!-- 2nd div -->
             <div id="menu">
                 <div id="menu_left">
-                    <div id="blog">BLOG</div>
+                    <div id="blog">NEWS</div>
                     <div id="buttons">
                         <div id="button1">
                             <a href='index.php?go=login'><input type='button' value='      LOG IN         ' name='login'/></a>
@@ -44,9 +44,9 @@
 <!-- 3rd div -->
             <div id="content">
                 <div id="content_main" style="min-height: 500px;">
-                <!-- Check if registered or just user have no post in db -->   
+                <!-- Check if there is no articles in database -->   
                 <?php if(empty($articles_array['0'])):?>
-                <!-- appearing each post in users db --> 
+                <!-- appearing each article from database --> 
                 <?php foreach($articles_array as $title => $content): ?>
                     <div id="content_one_note">
                         <div id="main_title" style="min-height: 25px; background-color: graytext;">

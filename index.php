@@ -12,9 +12,10 @@ if(!empty($_SESSION['user_name'])){
 
 //Error messages and messages
 $regisrt_error = 0;
+$user_name = '1';// Чтобы правильно запустить form_login.php и form_reg.php
 
 
-// Controller Enter point
+// Controller Enter point  If user clicked on register or login
     if(!empty($_GET['go'])) {// If user came throug GET method
         if($_GET['go'] === 'login')// If user clicked on Log in form
             $form_type = 'views/form_login.php';// saving Log in html form path for further its include in main.php
@@ -39,5 +40,4 @@ $articles_array = article_content_and_time($articles);// массив
     
 // View main page for guest
     include_once '/views/main.php';//__DIR__ . '/views/main.php';
-
 ?>

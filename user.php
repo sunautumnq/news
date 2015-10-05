@@ -1,7 +1,7 @@
 <?php
 //Controller for user
 
-require_once '/models/blog_notes.php';
+require_once '/models/comment_articles.php';
 require_once '/models/articles.php';
 
 session_start();
@@ -15,7 +15,8 @@ if(empty($_SESSION['user_name'])){
 $title = $_SESSION['user_name'];
 //Launching user.php model
 
-$data = notes_to_array($title);// Retrieving notes, its titles and post time from database
+//$data = notes_to_array($title);// Retrieving notes, its titles and post time from database
+
 //Launching articles.php model
 
 $articles = article_titles();// Retrieving article titles массив

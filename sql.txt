@@ -1,0 +1,22 @@
+you will need 1 database named ml1_news
+and 3 tables 
+
+articles
+1	article_id	bigint(20)
+2	article_title	varchar(130)
+3	article_content	varchar(7000)
+4	article_post_time	timestamp
+
+
+, comments_articles,
+1	article_comment_id	bigint(20)
+2	article_name	varchar(200)
+3	article_comment_title	varchar(50)
+4	article_comment_time	timestamp
+5	article_comment_content	varchar(300)
+
+
+ users
+1	user_id	bigint(20)
+2	user_name	varchar(25)
+3	user_password

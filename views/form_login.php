@@ -1,5 +1,6 @@
 <!-- Log in form -->
-<form action="login.php" method="post">
+    <!-- php передаст get параметр если пользователь зашел со страници конкретной статьи -->
+<form action="login.php<?php if($user_name == '0') echo '?article=' . $title; ?>" method="post">
     <fieldset>
         <div id="mright1"><div><legend> Please Log in </legend></div></div>
         <br/>
